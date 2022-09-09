@@ -29,7 +29,9 @@ public class TpCarrefour {
                 .openRayonsMenu()
                 .hoverSportsCategorie()
                 .openBestSales()
-                .openFirstResultSports();
+                .openFirstResultSports()
+                .chooseDeliveryMode()
+                .addToCart();
 
 
 
