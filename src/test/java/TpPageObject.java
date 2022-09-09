@@ -55,7 +55,7 @@ public class TpPageObject {
         actions.perform();
 
         try {
-            Thread.sleep(4000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
