@@ -1,3 +1,5 @@
+package carrefour;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,12 +11,11 @@ import java.time.Duration;
 public class HomePage {
 
     private WebDriver driver;
-    private By acceptCookieSelector = By.cssSelector("#sp-cc-accept");
-    private By barreRechercheSelector = By.cssSelector("[aria-label=Rechercher]");
-    private By validerLoupeSelector = By.cssSelector("[type=submit]");
+    private By acceptCookieSelector = By.cssSelector("#onetrust-accept-btn-handler");
+
+    private By maisonLoisirButtonSelector = By.xpath("//*[@id=\"data-top-bar\"]/div/div/div[2]/label/a");
     private final int TIMEOUT_COOKIE = 6;
 
-    // constructeur
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -27,14 +28,13 @@ public class HomePage {
         return this;
     }
 
-    public SearchResultPage searchWithButton(String keyword) {
+    public ShoppingPage openShoppingPage() {
 
-        WebElement barreRecherche = driver.findElement(barreRechercheSelector);
-        barreRecherche.sendKeys(keyword);
 
-        WebElement validerLoupe = driver.findElement(validerLoupeSelector);
-        validerLoupe.click();
+        WebElement maisonLoisirButton = driver.findElement(maisonLoisirButtonSelector);
+        maisonLoisirButton.click();
 
-        return new SearchResultPage(driver);
+        return new ShoppingPage(driver);
     }
+
 }
