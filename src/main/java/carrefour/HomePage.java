@@ -13,7 +13,7 @@ public class HomePage {
     private WebDriver driver;
     private By acceptCookieSelector = By.cssSelector("#onetrust-accept-btn-handler");
 
-    private By maisonLoisirButtonSelector = By.xpath("//*[@id=\"data-top-bar\"]/div/div/div[2]/label/a");
+    private By maisonLoisirButtonSelector = By.cssSelector("#data-top-bar > div > div > div:nth-of-type(2) > label > a");
     private final int TIMEOUT_COOKIE = 6;
 
     public HomePage(WebDriver driver) {

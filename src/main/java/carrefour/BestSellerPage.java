@@ -8,7 +8,7 @@ public class BestSellerPage {
 
     private WebDriver driver;
 
-    private By voirButtonSelector = By.xpath("//*[@id=\"3663326022551\"]/div[2]/div[1]/div[2]/div[2]/a");
+    private By voirButtonSelector = By.cssSelector("#3663326022551 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > a");
 
     public BestSellerPage(WebDriver driver) {
         this.driver = driver;
