@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class TP3 {
+public class TP3Test {
 
     WebDriver driver;
 
