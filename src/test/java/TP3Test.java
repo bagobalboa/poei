@@ -31,7 +31,7 @@ public class TP3Test {
         driver = new RemoteWebDriver(new URL("http://192.168.121.11:4444"), options);
 
 
-        
+
         driver.manage().window().maximize();
         driver.get("https://www.amazon.fr");
     }
