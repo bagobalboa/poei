@@ -1,0 +1,9 @@
+amazon\SearchResultPage.class
+amazon\CartPage.class
+amazon\HomePage.class
+carrefour\BestSellerPage.class
+carrefour\HomePage.class
+carrefour\ShoppingPage.class
+carrefour\CartPage.class
+carrefour\ProductPage.class
+amazon\ProductPage.class

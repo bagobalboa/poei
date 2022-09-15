@@ -1,5 +1,7 @@
 package amazon;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,7 @@ public class CartPage {
     private By dropdownSelector = By.cssSelector("#quantity");
     private By getCapacitySelector = By.cssSelector(".sc-product-variation .a-text-bold + span");
 
+    private static final Logger Log = LogManager.getLogger(CartPage.class);
 
     // constructeur
     public CartPage(WebDriver driver) {
@@ -21,6 +24,8 @@ public class CartPage {
 
 
     public CartPage selectQuantity(int quantity) {
+
+        Log.info("Je choisi ma quantité");
 
         WebElement dropdown = driver.findElement(dropdownSelector);
         Select categoriesSelect = new Select(dropdown);
@@ -41,3 +46,4 @@ public class CartPage {
 
 
 }
+
