@@ -16,9 +16,6 @@ public class SearchResultPage {
 
     private static final Logger Log = LogManager.getLogger(SearchResultPage.class);
 
-    // private final int TIMEOUT_FIRST_RESULT = 6;
-
-
     public SearchResultPage(WebDriver driver) {
         this.driver = driver;
     }

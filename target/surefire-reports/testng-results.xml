@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-12T10:15:40 CEST" name="Command line suite" finished-at="2022-09-12T10:16:08 CEST" duration-ms="27606">
+  <suite started-at="2022-09-15T16:12:30 CEST" name="Suite" finished-at="2022-09-15T16:12:48 CEST" duration-ms="18185">
     <groups>
     </groups>
-    <test started-at="2022-09-12T10:15:40 CEST" name="Command line test" finished-at="2022-09-12T10:16:08 CEST" duration-ms="27606">
-      <class name="TP3Test">
-        <test-method is-config="true" signature="before()[pri:0, instance:TP3Test@7bb58ca3]" started-at="2022-09-12T10:15:52 CEST" name="before" finished-at="2022-09-12T10:15:53 CEST" duration-ms="1762" status="PASS">
+    <test started-at="2022-09-15T16:12:30 CEST" name="Test 1" finished-at="2022-09-15T16:12:38 CEST" duration-ms="7770">
+      <class name="TpTestHover">
+        <test-method is-config="true" signature="before()[pri:0, instance:TpTestHover@126945f9]" started-at="2022-09-15T16:12:30 CEST" name="before" finished-at="2022-09-15T16:12:33 CEST" duration-ms="3180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="testAmazon()[pri:0, instance:TP3Test@7bb58ca3]" started-at="2022-09-12T10:15:53 CEST" name="testAmazon" finished-at="2022-09-12T10:15:59 CEST" duration-ms="5981" status="PASS">
+        <test-method signature="TestHover()[pri:0, instance:TpTestHover@126945f9]" started-at="2022-09-15T16:12:33 CEST" name="TestHover" finished-at="2022-09-15T16:12:37 CEST" duration-ms="3431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAmazon -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TP3Test@7bb58ca3]" started-at="2022-09-12T10:15:59 CEST" name="teardown" finished-at="2022-09-12T10:16:00 CEST" duration-ms="177" status="PASS">
+        </test-method> <!-- TestHover -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TpTestHover@126945f9]" started-at="2022-09-15T16:12:37 CEST" name="teardown" finished-at="2022-09-15T16:12:38 CEST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="before()[pri:0, instance:TP3Test@7bb58ca3]" started-at="2022-09-12T10:16:00 CEST" name="before" finished-at="2022-09-12T10:16:02 CEST" duration-ms="1917" status="PASS">
+      </class> <!-- TpTestHover -->
+    </test> <!-- Test 1 -->
+    <test started-at="2022-09-15T16:12:38 CEST" name="Test 2" finished-at="2022-09-15T16:12:48 CEST" duration-ms="10403">
+      <class name="TpPageObjectTest">
+        <test-method is-config="true" signature="before()[pri:0, instance:TpPageObjectTest@604c5de8]" started-at="2022-09-15T16:12:38 CEST" name="before" finished-at="2022-09-15T16:12:40 CEST" duration-ms="1906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="testAmazonList()[pri:0, instance:TP3Test@7bb58ca3]" started-at="2022-09-12T10:16:02 CEST" name="testAmazonList" finished-at="2022-09-12T10:16:08 CEST" duration-ms="6128" status="PASS">
+        <test-method signature="testPO()[pri:0, instance:TpPageObjectTest@604c5de8]" started-at="2022-09-15T16:12:40 CEST" name="testPO" finished-at="2022-09-15T16:12:48 CEST" duration-ms="8309" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAmazonList -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TP3Test@7bb58ca3]" started-at="2022-09-12T10:16:08 CEST" name="teardown" finished-at="2022-09-12T10:16:08 CEST" duration-ms="168" status="PASS">
+        </test-method> <!-- testPO -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TpPageObjectTest@604c5de8]" started-at="2022-09-15T16:12:48 CEST" name="teardown" finished-at="2022-09-15T16:12:48 CEST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- TP3Test -->
-      <class name="TP1Test">
-        <test-method signature="test1()[pri:0, instance:TP1Test@176d53b2]" started-at="2022-09-12T10:15:40 CEST" name="test1" finished-at="2022-09-12T10:15:46 CEST" duration-ms="6197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="testAmazon()[pri:0, instance:TP1Test@176d53b2]" started-at="2022-09-12T10:15:46 CEST" name="testAmazon" finished-at="2022-09-12T10:15:52 CEST" duration-ms="5236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAmazon -->
-      </class> <!-- TP1Test -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+      </class> <!-- TpPageObjectTest -->
+    </test> <!-- Test 2 -->
+  </suite> <!-- Suite -->
 </testng-results>

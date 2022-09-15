@@ -17,7 +17,7 @@ public class SetupTeardown {
 
     protected WebDriver driver;
 
-    String browser = "firefox";
+    String browser = "chrome";
 
     @BeforeMethod
     public void before() throws MalformedURLException {

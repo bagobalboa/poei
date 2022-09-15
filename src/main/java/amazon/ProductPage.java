@@ -18,8 +18,6 @@ public class ProductPage {
     private By refuseApplecareSelector = By.cssSelector("[aria-labelledby=\"attachSiNoCoverage-announce\"]");
     private By ajoutPanierSelector = By.cssSelector("#attach-sidesheet-view-cart-button");
     private static final Logger Log = LogManager.getLogger(ProductPage.class);
-
-
     private final int TIMEOUT_NOAPPLECARE = 6;
 
 
