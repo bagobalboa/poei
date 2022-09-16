@@ -1,5 +1,7 @@
-import amazon.HomePage;
-import commun.SetupTeardown;
+package test.java;
+
+import main.java.amazon.HomePage;
+import main.java.commun.SetupTeardown;
 import org.testng.annotations.Test;
 public class TpPageObjectTest extends SetupTeardown {
 

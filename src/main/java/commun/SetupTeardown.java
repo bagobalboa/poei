@@ -1,4 +1,4 @@
-package commun;
+package main.java.commun;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,16 +7,20 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 
 public class SetupTeardown {
 
     protected WebDriver driver;
-
     String browser = "chrome";
 
     @BeforeMethod
@@ -50,7 +54,31 @@ public class SetupTeardown {
     }
 
     @AfterMethod
-    public void teardown() {
+    public void teardown(ITestResult result) throws IOException, NoSuchAlgorithmException, KeyStoreException, InterruptedException, KeyManagementException {
+
+       ImportResultsToXray res = new ImportResultsToXray();
+
+        if(result.getStatus() == ITestResult.SUCCESS)
+        {
+            res.generateJsonResults("PASSED");
+            System.out.println("Passed **");
+
+        }
+        else if(result.getStatus() == ITestResult.FAILURE)
+        {
+            res.generateJsonResults("FAILED");
+            System.out.println("Failed **");
+
+        }
+        else if(result.getStatus() == ITestResult.SKIP ){
+
+            res.generateJsonResults("SKIPPED");
+            System.out.println("Skiped **");
+        }
+
+        res.RemonteResultats();
+
+
         driver.quit();
     }
 }

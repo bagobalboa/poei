@@ -1,5 +1,9 @@
-import amazon.HomePage;
-import commun.SetupTeardown;
+package test.java;
+
+
+
+import main.java.amazon.HomePage;
+import main.java.commun.SetupTeardown;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;

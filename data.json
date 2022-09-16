@@ -1,0 +1,12 @@
+{
+  "testExecutionKey" : "POEI22-717",
+  "info" : {
+    "summary" : "Execution of automated tests by Olivier Jordan",
+    "description" : "This execution is automatically"
+  },
+  "tests" : [ {
+    "testKey" : "POEI22-676",
+    "comment" : "Successful execution",
+    "status" : "PASSED"
+  } ]
+}
