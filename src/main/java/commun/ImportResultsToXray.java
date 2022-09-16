@@ -124,7 +124,7 @@ public void generateJsonResults(String status) throws IOException {
 
         request2.addHeader("Content-Type", "application/json");
         request2.addHeader("Authorization", "Bearer " + getToken());
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         System.out.println("le path ="+System.getProperty("user.dir")+"\\data.json");
         StringEntity params = new StringEntity(Files.readString(Path.of(System.getProperty("user.dir")+"\\data.json"), StandardCharsets.UTF_8));
         request2.setEntity(params);
